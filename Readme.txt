@@ -6,5 +6,5 @@ Paleta de Colores:
 
 
 24-7-236
-*Paleta de colores 
+*Portfolio 
  sass assets/scss/style.scss assets/css/style.css

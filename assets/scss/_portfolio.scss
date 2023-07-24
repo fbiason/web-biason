@@ -1,4 +1,3 @@
-/* Estilos personalizados para las cartas */
 .custom-card {
   width: 300px;
   height: 400px;
@@ -6,8 +5,32 @@
   background-color: #111;
   position: relative;
   overflow: hidden;
-  color: #fff;
+  color: #000000;
   border-radius: 10px;
+  font-weight: 700;
+  border: 2px solid #ececec; /* Agregar un borde negro de 2px */
+  text-shadow: 2px 2px 4px #ffffff; /* Agregar una sombra con desplazamiento de 2px horizontal y 2px vertical, con un desenfoque de 4px, y color negro */
+  position: relative;
+}
+
+.additional-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #D5D80E;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.custom-card:hover {
+  color: #D5D80E;
+  font-weight: 600;
+  border: 2px solid #000000;
+  text-shadow: 2px 2px 4px #000000; 
 }
 
 .custom-card img {
@@ -30,13 +53,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Color oscuro para toda la carta */
+  background-color: #44166248; /* Color oscuro para toda la carta */
   transition: all 0.3s ease-in-out;
   z-index: 1; /* Aseguramos que esté sobre la imagen */
 }
 
 .custom-card:hover::after {
-  height: 50%; /* Al pasar el mouse, mostramos el color oscuro solo en la mitad superior */
+  height: 1%; /* Al pasar el mouse, mostramos el color oscuro solo en la mitad superior */
 }
 
 .custom-card .card-body {
@@ -61,14 +84,19 @@
 
 .custom-card .btn-web {
   background-color: #D5D80E;
-  border-color: #ccc;
+  border-color: #000000;
   color: #000;
   font-family: Arial, sans-serif;
+  font-weight: 600;
+  box-shadow: none; /* Eliminar la sombra */
+  text-shadow: none;
 }
+
 
 .custom-card .btn-web:hover {
   background-color: #441662;
   border-color: #fff;
   color: #ffffff;
+  box-shadow: none; /* Eliminar la sombra */
 }
 
