@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
+
+.my-custom-root {
+  --my-color: #3c3163;
+  --my-transition-time: 0.8s;
+}
+
+.my-works-web {
+  box-sizing: border-box;
+}
+
+.my-cards-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.my-card {
+  font-family: 'Heebo';
+  --my-bg-filter-opacity: 0.4; /* Ajusta la opacidad del fondo oscuro */
+  background-image: linear-gradient(rgba(black,var(--my-bg-filter-opacity)),rgba(black,var(--my-bg-filter-opacity))), var(--bg-img);
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  color: #18d26e; /* Cambia el color del texto a verde #8a2be2 */
+  /* Opcionalmente, puedes usar violeta: color: #8a2be2; */
+  border-radius: 1em;
+  padding: 1em;
+  /*margin: 2em;*/
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--my-transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 5px solid #000000;
+  text-decoration: none;
+}
+
+
+.my-card:hover {
+  transform: rotate(0);
+}
+
+.my-card h1 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.my-card p {
+  font-size: 0.75em;
+  font-family: 'Open Sans';
+  margin-top: 0.5em;
+  line-height: 2em;
+}
+
+.my-card .my-tags {
+  display: flex;
+}
+
+.my-card .my-tags .my-tag {
+  font-size: 0.75em;
+  background: rgba(233, 232, 232, 0.158);
+  border-radius: 0.3rem;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1.5em;
+  transition: all, var(--my-transition-time);
+}
+
+.my-card:hover .my-tags .my-tag {
+  background: var(--my-color);
+  color: white;
+}
+
+.my-text {
+  color: rgb(255, 255, 255);
+}
+
+.my-card .my-date {
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  font-size: 0.75em;
+  padding: 1em;
+  line-height: 1em;
+  opacity: .8;
+}
+
+.my-card:before, .my-card:after {
+  content: '';
+  transform: scale(0);
+  transform-origin: top left;
+  border-radius: 10%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: -5;
+  transition: all, var(--my-transition-time);
+  transition-timing-function: ease-in-out;
+}
+
+.my-card:before {
+  background: #302e2e56;
+  width: 250%;
+  height: 250%;
+}
+
+.my-card:after {
+  background: rgba(0, 0, 0, 0.178);
+  width: 200%;
+  height: 200%;
+}
+
+.my-card:hover {
+  color: rgb(241, 241, 241);
+}
+
+.my-card:hover:before, .my-card:hover:after {
+  transform: scale(1);
+}
+
+.my-card-grid-space .num {
+  font-size: 3em;
+  margin-bottom: 1.2rem;
+  margin-left: 1rem;
+}
+
+.my-info {
+  font-size: 1.2em;
+  display: flex;
+  padding: 1em 3em;
+  height: 3em;
+}
+
+.my-info img {
+  height: 3em;
+  margin-right: 0.5em;
+}
+
+.my-info h1 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1285px) {
+  .my-cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .my-cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .my-info {
+    justify-content: center;
+  }
+  .my-card-grid-space .num {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .my-cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .my-card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .my-info {
+    display: block;
+    text-align: center;
+  }
+  .my-info h1 {
+    margin: 0;
+  }
+}
