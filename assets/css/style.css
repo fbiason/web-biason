@@ -120,7 +120,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #D5D80E;
+  background: #441662;
 }
 
 @media (max-width: 992px) {
@@ -692,7 +692,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon {
-  background: #000000;
+  background: #441662;
 }
 
 .services .icon-box:hover .icon i {
@@ -703,9 +703,13 @@ section .container {
   background: #D5D80E;
 }
 
-.services .icon-box:hover h4 a,
+.services .icon-box:hover a,
 .services .icon-box:hover p {
   color: #000000;
+}
+
+.services .icon-box:hover h4 {
+  color: #441662;
 }
 
 /* Estilos personalizados para las cartas */
@@ -769,17 +773,17 @@ section .container {
   margin-bottom: 15px;
 }
 
-.custom-card .btn-primary {
+.custom-card .btn-web {
   background-color: #D5D80E;
   border-color: #ccc;
   color: #000;
   font-family: Arial, sans-serif;
 }
 
-.custom-card .btn-primary:hover {
-  background-color: #fff;
+.custom-card .btn-web:hover {
+  background-color: #441662;
   border-color: #fff;
-  color: #000;
+  color: #ffffff;
 }
 
 .portfolio .portfolio-item {
@@ -813,6 +817,7 @@ section .container {
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
   background: #D5D80E;
+  color: #441662;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1054,7 +1059,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #D5D80E;
+  color: #441662;
 }
 
 .contact .php-email-form {
@@ -1144,7 +1149,7 @@ section .container {
   background: #D5D80E;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: #441662;
   transition: 0.4s;
   border-radius: 4px;
 }

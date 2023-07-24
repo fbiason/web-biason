@@ -59,7 +59,7 @@
   }
   
   .services .icon-box:hover .icon {
-    background: #000000;
+    background: #441662;
   }
   
   .services .icon-box:hover .icon i {
@@ -70,8 +70,12 @@
     background: #D5D80E;
   }
   
-  .services .icon-box:hover h4 a,
+  .services .icon-box:hover a,
   .services .icon-box:hover p {
     color: #000000;
+  }
+  
+  .services .icon-box:hover h4 {
+    color: #441662;
   }
   
