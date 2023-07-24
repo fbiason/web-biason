@@ -1,6 +1,3 @@
-  /*--------------------------------------------------------------
-  # Portfolio
-  --------------------------------------------------------------*/
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
@@ -31,7 +28,7 @@
   
   .portfolio #portfolio-flters li:hover,
   .portfolio #portfolio-flters li.filter-active {
-    background: #18d26e;
+    background: #D5D80E;
   }
   
   .portfolio #portfolio-flters li:last-child {
@@ -131,7 +128,7 @@
   }
   
   .portfolio .portfolio-wrap .portfolio-links a:hover {
-    color: #63eda3;
+    color: #D5D80E;
   }
   
   .portfolio .portfolio-wrap:hover::before {
@@ -225,6 +222,6 @@
   }
   
   .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #18d26e;
+    background-color: #D5D80E;
   }
   

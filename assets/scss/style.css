@@ -35,12 +35,12 @@ body::after {
   }
 }
 a {
-  color: #18d26e;
+  color: #D5D80E;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #D5D80E;
   text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ h6 {
 
 #header h2 span {
   color: #fff;
-  border-bottom: 2px solid #18d26e;
+  border-bottom: 2px solid #D5D80E;
   padding-bottom: 6px;
 }
 
@@ -120,7 +120,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
+  background: #D5D80E;
 }
 
 @media (max-width: 992px) {
@@ -177,12 +177,6 @@ h6 {
     font-size: 26px;
   }
 }
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
 .navbar {
   padding: 0;
   margin-top: 35px;
@@ -232,7 +226,7 @@ h6 {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #18d26e;
+  background-color: #D5D80E;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -321,9 +315,6 @@ h6 {
   position: relative;
 }
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
 section {
   overflow: hidden;
   position: absolute;
@@ -372,7 +363,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #4ceb95;
+  background: #D5D80E;
   margin: 4px 10px;
 }
 
@@ -386,13 +377,10 @@ section .container {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #18d26e;
+  color: #D5D80E;
 }
 
 .about-me .content ul {
@@ -413,7 +401,7 @@ section .container {
 .about-me .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #18d26e;
+  color: #D5D80E;
   line-height: 0;
 }
 
@@ -451,18 +439,15 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: #D5D80E;
 }
 
 .skill-logo {
-  width: 24px; /* Ajusta el tamaño del logotipo según tus necesidades */
+  width: 24px;
   height: 24px;
-  margin-right: 8px; /* Espacio entre el logotipo y el texto del skill */
+  margin-right: 8px;
 }
 
-/*--------------------------------------------------------------
-# Interests
---------------------------------------------------------------*/
 .interests .icon-box {
   display: flex;
   align-items: center;
@@ -587,12 +572,9 @@ section .container {
 }
 
 .works .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #D5D80E;
 }
 
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -614,7 +596,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: #D5D80E;
   margin-bottom: 10px;
 }
 
@@ -647,13 +629,10 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #D5D80E;
+  border: 2px solid #D5D80E;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
@@ -665,7 +644,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #18d26e;
+  background: #D5D80E;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -710,8 +689,8 @@ section .container {
 }
 
 .services .icon-box:hover {
-  background: #18d26e;
-  border-color: #18d26e;
+  background: #D5D80E;
+  border-color: #D5D80E;
 }
 
 .services .icon-box:hover .icon {
@@ -719,11 +698,11 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #18d26e;
+  color: #D5D80E;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: #D5D80E;
 }
 
 .services .icon-box:hover h4 a,
@@ -795,7 +774,7 @@ section .container {
 }
 
 .custom-card .btn-primary {
-  background-color: #18d26e;
+  background-color: #D5D80E;
   border-color: #ccc;
   color: #000;
   font-family: Arial, sans-serif;
@@ -807,9 +786,6 @@ section .container {
   color: #000;
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -840,7 +816,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #D5D80E;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -940,7 +916,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: #D5D80E;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -1033,12 +1009,9 @@ section .container {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #D5D80E;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
 .contact .info-box {
   color: #444444;
   padding: 20px;
@@ -1048,7 +1021,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #18d26e;
+  color: #D5D80E;
   border-radius: 50%;
   padding: 14px;
   float: left;
@@ -1085,7 +1058,7 @@ section .container {
 }
 
 .contact .info-box .social-links a:hover {
-  color: #18d26e;
+  color: #D5D80E;
 }
 
 .contact .php-email-form {
@@ -1109,7 +1082,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #18d26e;
+  background: #D5D80E;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1129,7 +1102,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #D5D80E;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1176,7 +1149,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #18d26e;
+  background: #D5D80E;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1185,7 +1158,7 @@ section .container {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #15bb62;
+  background: #D5D80E;
 }
 @keyframes animate-loading {
   0% {
