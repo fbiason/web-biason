@@ -46,12 +46,64 @@
   .contact .info-box .social-links a:hover {
     color: #441662;
   }
-  
-  .contact .php-email-form {
+
+  .contact .form-contacto {
     padding: 30px;
     background: rgba(255, 255, 255, 0.08);
   }
-  /**--------------**/
+
+  .contact .form-contacto input,
+  .contact .form-contacto textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: #fff;
+  }
+  
+  .contact .form-contacto input:focus,
+  .contact .form-contacto textarea:focus {
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+  
+  .contact .form-contacto input::-moz-placeholder,
+  .contact .form-contacto textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  
+  .contact .form-contacto input::placeholder,
+  .contact .form-contacto textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  
+  .contact .form-contacto input {
+    padding: 10px 15px;
+  }
+  
+  .contact .form-contacto textarea {
+    padding: 12px 15px;
+  }
+
+  .contact .form-contacto button[type=submit] {
+    background: #D5D80E;
+    border: 0;
+    padding: 10px 30px;
+    color: #441662;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+
+  .contact .form-contacto button[type=submit]:hover {
+    background: #441662;
+    color: #D5D80E;
+  }
+
+  /*  php-email-form Se borro porque generaba error al enviar el mail, ahora es form-contacto
+
   .contact .php-email-form .error-message {
     display: none;
     background: rgba(255, 255, 255, 0.08);
@@ -93,56 +145,9 @@
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
   }
-  
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 0;
-    transition: 0.3s;
-    color: #fff;
-  }
-  
-  .contact .php-email-form input:focus,
-  .contact .php-email-form textarea:focus {
-    background-color: rgba(255, 255, 255, 0.11);
-  }
-  
-  .contact .php-email-form input::-moz-placeholder,
-  .contact .php-email-form textarea::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.3);
-    opacity: 1;
-  }
-  
-  .contact .php-email-form input::placeholder,
-  .contact .php-email-form textarea::placeholder {
-    color: rgba(255, 255, 255, 0.3);
-    opacity: 1;
-  }
-  
-  .contact .php-email-form input {
-    padding: 10px 15px;
-  }
-  
-  .contact .php-email-form textarea {
-    padding: 12px 15px;
-  }
-  
-  .contact .php-email-form button[type=submit] {
-    background: #D5D80E;
-    border: 0;
-    padding: 10px 30px;
-    color: #441662;
-    transition: 0.4s;
-    border-radius: 4px;
-  }
-  
-  .contact .php-email-form button[type=submit]:hover {
-    background: #D5D80E;
-  }
-  
+
+ 
+*/
   @-webkit-keyframes animate-loading {
     0% {
       transform: rotate(0deg);

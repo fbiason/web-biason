@@ -4,8 +4,7 @@ Paleta de Colores:
 #D5D80E
 #EE8E0E
 
+Ficha finalización: 25-7-236
 
-25-7-236
-*Formulario
 
- sass assets/scss/style.scss assets/css/style.css
+sass assets/scss/style.scss assets/css/style.css
