@@ -45,6 +45,10 @@
     margin: 0;
   }
   
+  #header .btn-cv {
+    display: flex;
+  }
+
   #header .social-links {
     margin-top: 40px;
     display: flex;
@@ -66,8 +70,8 @@
   
   #header .social-links a:hover {
     background: #441662;
-  }
-  
+  }  
+
   @media (max-width: 992px) {
     #header h1 {
       font-size: 36px;
@@ -100,7 +104,8 @@
   }
   
   #header.header-top .social-links,
-  #header.header-top h2 {
+  #header.header-top h2,
+  #header.header-top .btn-cv {
     display: none;
   }
   

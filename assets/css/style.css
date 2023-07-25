@@ -100,6 +100,10 @@ h6 {
   margin: 0;
 }
 
+#header .btn-cv {
+  display: flex;
+}
+
 #header .social-links {
   margin-top: 40px;
   display: flex;
@@ -151,7 +155,8 @@ h6 {
 }
 
 #header.header-top .social-links,
-#header.header-top h2 {
+#header.header-top h2,
+#header.header-top .btn-cv {
   display: none;
 }
 
