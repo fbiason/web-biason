@@ -6,9 +6,8 @@ Paleta de Colores:
 
 
 GA4: 28-7-236
-sass assets/scss/style.scss assets/css/style.css
 
-Actualización: 24-11-23
+Actualización: 25-10-23
 *Actuailzación de Portfolio
 
 *Incorporar Congreso TEA
