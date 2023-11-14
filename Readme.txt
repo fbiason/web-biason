@@ -10,5 +10,4 @@ GA4: 28-7-236
 Actualización: 25-10-23
 *Actuailzación de Portfolio
 
-*Incorporar Congreso TEA
 *Incorporar Tutoria de Coder 
