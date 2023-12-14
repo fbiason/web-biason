@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 *,
 *:before,
 *:after {
+=======
+*, *:before, *:after {
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
   box-sizing: border-box;
 }
 
@@ -47,7 +51,11 @@ body {
   position: absolute;
   width: 60px;
   height: 4px;
+<<<<<<< HEAD
   background: linear-gradient(135deg, #441662, #924ac2);
+=======
+  background: linear-gradient(135deg, #4f5005, #D5D80E);
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
   bottom: 0;
 }
 
@@ -60,6 +68,11 @@ body {
 
 .card {
   color: inherit;
+<<<<<<< HEAD
+=======
+  border: var(--bs-card-border-width) solid white;
+  background-color: #fff0;
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
   width: calc(33% - 2rem);
   min-width: calc(33% - 2rem);
   height: 400px;
@@ -105,7 +118,11 @@ body {
   color: #e7e7e7;
   overflow: hidden;
   font-family: Poppins, sans-serif;
+<<<<<<< HEAD
   -webkit-text-stroke: 1px black;
+=======
+  -webkit-text-stroke: 1px black; 
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
 }
 
 .front:before {
@@ -128,10 +145,17 @@ body {
 }
 
 .back {
+<<<<<<< HEAD
   background: linear-gradient(70deg, #d5d80e 25%, #f0f0f0 70%, #ee8e0e 75%);
   background-size: 200% 100%;
   animation: waves 4s linear infinite;
 
+=======
+  background: linear-gradient(70deg, #D5D80E 25%, #f0f0f0 55%, #EE8E0E 75%);
+  background-size: 300% 100%;
+  animation: waves 4s linear infinite;
+  color: black;
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
   transform: rotateY(-180deg);
   padding: 0 2em;
 }
@@ -141,7 +165,11 @@ body {
     background-position: 100% 0;
   }
   100% {
+<<<<<<< HEAD
     background-position: -100% 0;
+=======
+    background-position: -100% 30;
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
   }
 }
 
@@ -159,7 +187,11 @@ body {
   transform: rotateY(180deg);
 }
 .card:nth-child(even) .back .button {
+<<<<<<< HEAD
   background: linear-gradient(135deg, #4f5005, #d5d80e);
+=======
+  background: linear-gradient(135deg, #4f5005, #D5D80E);
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
 }
 .card:nth-child(even) .back .button:before {
   box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
@@ -203,6 +235,7 @@ body {
 }
 .button:hover:before {
   transform: translateZ(-55px);
+<<<<<<< HEAD
 }
 .button:active {
   transform: translateZ(20px);
@@ -211,3 +244,11 @@ body {
   transform: translateZ(-20px);
   top: 12px;
 }
+=======
+}
+
+.button:active:before {
+  transform: translateZ(-20px);
+  top: 12px;
+}
+>>>>>>> 07f908f0348f5a1756e530996af0b8c6a28680be
