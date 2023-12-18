@@ -1,121 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Pug</title>
-  </head>
-  <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <title>Pug</title>
-        <link rel="stylesheet" href="prueba.css" />
-      </head>
-      <body>
-        <div class="content">
-          <h1 class="heading">Proyectos Web</h1>
-          <p class="description">Hover over a card to flip it.</p>
-          <a class="card" href="#!">
-            <div
-              class="front"
-              style="
-                background-image: url(/assets/img/portfolio/proyecto1-js.png);
-              "
-            >
-              <p>Proyecto Js</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Carrito de Compras</p>
-                <p>JS / DOM / Eventos / Workshop</p>
-                <button class="button">Ver Web</button>
-              </div>
-            </div></a
-          ><a class="card" href="http://proyecto1-js-fbiason.com.ar./">
-            <div
-              class="front"
-              style="
-                background-image: url(/assets/img/portfolio/biason-automotores.png);
-              "
-            >
-              <p>Biason Automotores</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Agencia de compra venta de vehículos</p>
-                <p>HTML / CSS / JS</p>
-                <button class="button">Ver Web</button>
-              </div>
-            </div></a
-          ><a class="card" href="https://www.biasonautomotores.com.ar">
-            <div
-              class="front"
-              style="
-                background-image: url(/assets/img/portfolio/ml-legales.png);
-              "
-            >
-              <p>ML Legales</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Estudio Jurídico</p>
-                <p>HTML / CSS / JS</p>
-                <button class="button">Ver Web</button>
-              </div>
-            </div></a
-          ><a class="card" href="https://www.mllegales.com.ar">
-            <div
-              class="front"
-              style="background-image: url(/assets/img/portfolio/tea.png)"
-            >
-              <p>TEA</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Fundación TEA Santa Cruz</p>
-                <p>HTML / CSS / JS</p>
-                <button class="button">Ver Web</button>
-              </div>
-            </div></a
-          ><a class="card" href="https://fundacionteasantacruz.com.ar/">
-            <div
-              class="front"
-              style="
-                background-image: url(/assets/img/portfolio/labancaria.png);
-              "
-            >
-              <p>La Bancaria Santa Cruz</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Sindicato Bancario</p>
-                <p>WordPress</p>
-                <button class="button">Ver Web</button>
-              </div>
-            </div></a
-          ><a class="card" href="https://labancariasantacruz.org.ar/">
-            <div
-              class="front"
-              style="
-                background-image: url(/assets/img/portfolio/escuela-futbol.png);
-              "
-            >
-              <p>Escuela de Fútbol Rosales</p>
-            </div>
-            <div class="back">
-              <div>
-                <p>Escuela de Formación de Fútbol</p>
-                <p>HTML / CSS / JS</p>
-                <button class="button">Ver Web</button>
-              </div>
-            </div></a
-          ><a
-            class="card"
-            href="https://www.escueladefutbolrosales.com.ar/"
-          ></a>
+
+<head>
+  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCVDK9CMWT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KCVDK9CMWT');
+</script>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Biason Web</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="prueba.html">Lic. Franco Biason</a></h1>
+      <h2>Bienvenidos a mi sitio web, me llamo Franco Biason<br> soy
+        <span> Licenciado en Administración</span> & Web Developer</h2>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About me</a></li>
+          <li><a class="nav-link" href="#resume">Formación y Experiencia</a></li>
+          <li><a class="nav-link" href="#services">Servicios</a></li>
+          <li><a class="nav-link" href="#portfolio">Certificaciones</a></li>
+          <li><a class="nav-link" href="#works">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/franco.biason" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/f.biason/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.behance.net/francobiason" class="behance"><i class="bi bi-behance"></i></a>
+        <a href="https://github.com/fbiason" class="github"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/francobiason/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="btn-cv">
+        <button type="button" class="btn btn-dark mt-5">
+          <a href="/assets/Curriculum Biason Franco Dic-23.pdf" download>Descargar CV</a>
+        </button>
+    </div>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+  <!-- ======= About Me ======= -->
+  <div class="about-me container">
+    <div class="section-title">
+      <h2>About me</h2>
+      <p>Lic. Franco Biason</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4" data-aos="fade-right">
+        <img src="assets/img/biason.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <h3>Management &amp; Web Developer</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="mt-3">
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong>
+                <span>8 Marzo 1991</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong>
+                <span>2966 44-9951</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Localidad:</strong>
+                <span>Rio Gallegos, Santa Cruz</span>
+              </li>
+            </ul>
+          </div>
+          <h3></h3>
+          <div class="col-lg-6">
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i> <strong>Título:</strong>
+                <span>Licenciado en Administración</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <strong>Mail:</strong> <span>franco.biason@gmail.com</span>
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i>
+                <strong>Disponibilidad:</strong>
+                <span>Part time</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      </body>
-    </html>
-  </body>
+        <p style="text-align: justify">
+          Soy licenciado en administración, me forme en la Universidad Nacional
+          de la Patagonia Austral (Santa Cruz, Argentina), tengo amplia
+          experiencia en desarrollo web y gestión de redes sociales. Cuento con
+          iniciativa y gran predisposición. Busco capacitarme constantemente y
+          me adapto fácilmente a nuevos entornos de trabajo.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End About Me -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Hard Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill"> <img src="assets/img/skills/html.png" alt="HTML" class="skill-logo"> HTML <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/css.png" alt="CSS" class="skill-logo"> CSS <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/js.png" alt="JS" class="skill-logo">JavaScript <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/angular.png" alt="Angular" class="skill-logo">Angular <i class="val">40%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/react.png" alt="React" class="skill-logo">React <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/wordpress.png" alt="WordPress" class="skill-logo">WordPress/CMS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/excel.png" alt="Excel" class="skill-logo"> Excel <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/word.png" alt="Word" class="skill-logo"> Word <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/drive.png" alt="Google Drive" class="skill-logo"> Google Drive <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+
+          <div class="progress">
+            <span class="skill"><img src="assets/img/skills/vtex.png" alt="VTEX" class="skill-logo">VTEX <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        </div>
+
+    </div><!-- End Hard Skills -->
+
+    <!-- ======= Soft Skills ======= -->
+    <div class="interests container">
+
+      <div class="section-title">
+        <h2>Soft Skills</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="icon-box">
+            <i class="ri-chat-1-line" style="color:  #33B5E5;"></i>
+            <h3>Comunicación efectiva</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-group-line" style="color:  #FFBB33 ;"></i>
+            <h3>Trabajo en equipo</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+          <div class="icon-box">
+            <i class="ri-tools-line" style="color: #FF8800;"></i>
+            <h3>Resolución de problemas</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+          <div class="icon-box">
+            <i class="ri-refresh-line" style="color: #99CC00;"></i>
+            <h3>Adaptabilidad</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-award-line" style="color:  #9933CC;"></i>
+            <h3>Liderazgo</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-lightbulb-flash-line" style="color:  #FF4444 ;"></i>
+            <h3>Pensamiento Crítico</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-paint-brush-line" style="color: #FF99CC;"></i>
+            <h3>Creatividad</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 mt-4">
+          <div class="icon-box">
+            <i class="ri-folder-line" style="color:  #6699CC;"></i>
+            <h3>Organización</h3>
+          </div>
+        </div>
+
+      </div>
+
+    </div><!-- End Soft Skills -->
+
+    <!-- ======= Works ======= -->
+    <div class="works container">
+
+      <div class="section-title">
+        <h2>Works</h2>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="works-item">
+              <img src="assets/img/works/logo-even.png" class="testimonial-img" alt="Even Cabañas Prefabricadas">
+              <h2>Even Cabañas Prefabricadas</h2><br>
+              <h3>Asesor de Administración y Finanzas</h3>
+              <p>
+              Responsable de la gestión financiera y administrativa de la empresa, incluyendo presupuestos, informes financieros, análisis de costos, planificación estratégica, y optimización de recursos.
+              </p>
+              <h4>Oct-22 - Presente</h4>
+            </div>
+          </div><!-- End Even -->
+
+          <div class="swiper-slide">
+            <div class="works-item">
+              <img src="assets/img/works/inset-logo.png" class="testimonial-img" alt="Instituto Superior de Enseñanza Técnica (InSET)">
+              <h2>Instituto Superior de Enseñanza Técnica (InSET)</h2>
+              <h3>Docente</h3>
+              <p>
+                Materias a cargo: <br>
+Derecho Laboral y Tributario.<br>
+Principios de Administración.<br>
+Gestión de Recursos Humanos.<br>
+Diseño y Gestión de Procedimientos Administrativos.
+              </p>
+              <h4>Abr-22- Presente</h4>
+            </div>
+          </div><!-- End InSET -->
+
+          <div class="swiper-slide">
+            <div class="works-item">
+              <img src="assets/img/works/cps-logo.png" class="testimonial-img" alt="Caja de Previsión Social">
+              <h2>Caja de Previsión Social</h2><br>
+              <h3>Administrativo</h3>
+              <p>Confección y control de presupuesto. <br>
+                Ejecuciones presupuestarias.<br>
+                Balances. <br>
+              </p>
+              <h4>Abr-22- Presente</h4>
+            </div>
+          </div><!-- End CPS-->
+
+          <div class="swiper-slide">
+            <div class="works-item">
+              <img src="assets/img/works/logo-coder.png" class="testimonial-img" alt="CoderHouse">
+              <h2>CoderHouse</h2><br>
+              <h3>Tutor</h3>
+              <p>
+                Tutor Community Manager & Publicidad.<br>    Tutor Customer Experience (CX).
+              </p>
+              <h4>Ago-22 - Presente</h4>
+            </div>
+          </div><!-- End CoderHouse -->
+
+          <div class="swiper-slide">
+            <div class="works-item">
+              <img src="assets/img/works/web-developer.png" class="testimonial-img" alt="Web Developer">
+              <h2>Freelance</h2><br>
+              <h3>Web Developer</h3>
+              <p>Desarrollo, mantenimiento y optimización web: Crear y mantener sitios web funcionales y atractivos utilizando lenguajes de programación como HTML, CSS, JavaScript y Angular.
+              </p>
+              <h4>Feb-21 - Presente</h4>
+            </div>
+          </div><!-- End Freelance -->
+
+          <div class="swiper-slide">
+            <div class="works-item">
+              <img src="assets/img/works/community-manager.png" class="testimonial-img" alt="Community Manager">
+              <h2>Freelance</h2><br>
+              <h3>Community Manager</h3>
+              <p>Construcción, gestión y administración de redes sociales. Creación y planifiación de contenido. Interacción y participación en la comunidad. Monitoreo y análisis de métricas.
+              </p>
+              <h4>Feb-21 - Presente</h4>
+            </div>
+          </div><!-- End Freelance -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="owl-carousel works-carousel">
+
+      </div>
+
+    </div><!-- End Works  -->
+
+  </section><!-- End About Section -->
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="prueba.js"></script>
+
+
+</body>
+
 </html>
