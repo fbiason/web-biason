@@ -33,10 +33,10 @@
    */
   const scrollto = (el) => {
     window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  top: 0,
+   behavior: "smooth",
+  });
+    };
 
   /**
    * Mobile nav toggle
@@ -47,93 +47,6 @@
     this.classList.toggle("bi-x");
   });
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on(
-    "click",
-    "#navbar .nav-link",
-    function (e) {
-      let section = select(this.hash);
-      if (section) {
-        e.preventDefault();
-
-        let navbar = select("#navbar");
-        let header = select("#header");
-        let sections = select("section", true);
-        let navlinks = select("#navbar .nav-link", true);
-
-        navlinks.forEach((item) => {
-          item.classList.remove("active");
-        });
-
-        this.classList.add("active");
-
-        if (navbar.classList.contains("navbar-mobile")) {
-          navbar.classList.remove("navbar-mobile");
-          let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
-        }
-
-        if (this.hash == "#header") {
-          header.classList.remove("header-top");
-          sections.forEach((item) => {
-            item.classList.remove("section-show");
-          });
-          return;
-        }
-
-        if (!header.classList.contains("header-top")) {
-          header.classList.add("header-top");
-          setTimeout(function () {
-            sections.forEach((item) => {
-              item.classList.remove("section-show");
-            });
-            section.classList.add("section-show");
-          }, 350);
-        } else {
-          sections.forEach((item) => {
-            item.classList.remove("section-show");
-          });
-          section.classList.add("section-show");
-        }
-
-        scrollto(this.hash);
-      }
-    },
-    true
-  );
-
-  /**
-   * Activate/show sections on load with hash links
-   */
-  window.addEventListener("load", () => {
-    if (window.location.hash) {
-      let initial_nav = select(window.location.hash);
-
-      if (initial_nav) {
-        let header = select("#header");
-        let navlinks = select("#navbar .nav-link", true);
-
-        header.classList.add("header-top");
-
-        navlinks.forEach((item) => {
-          if (item.getAttribute("href") == window.location.hash) {
-            item.classList.add("active");
-          } else {
-            item.classList.remove("active");
-          }
-        });
-
-        setTimeout(function () {
-          initial_nav.classList.add("section-show");
-        }, 350);
-
-        scrollto(window.location.hash);
-      }
-    }
-  });
 
   /**
    * Skills animation
@@ -251,3 +164,95 @@
    */
   new PureCounter();
 })();
+
+
+    /**
+   * Funcionalidades Portfolio
+   */
+    var swiper = new Swiper(".swiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true
+      },
+      keyboard: {
+        enabled: true
+      },
+      mousewheel: {
+        thresholdDelta: 70
+      },
+      spaceBetween: 60,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+    
+  
+  
+    
+  /**
+   * Back to top button
+   */
+// Función para mostrar u ocultar el botón "Volver arriba" según la posición del usuario en la página
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("back-to-top-btn").style.display = "block";
+    } else {
+        document.getElementById("back-to-top-btn").style.display = "none";
+    }
+}
+
+// Función para hacer scroll suavemente al principio de la página cuando se hace clic en el botón "Volver arriba"
+document.getElementById("back-to-top-btn").addEventListener("click", function() {
+    document.body.scrollTop = 0; // Para Safari
+    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtén todos los enlaces del navbar
+  var navLinks = document.querySelectorAll("#navbar a.nav-link");
+
+  // Agrega un event listener a cada enlace del navbar
+  navLinks.forEach(function(navLink) {
+    navLink.addEventListener("click", function(event) {
+      // Previene el comportamiento predeterminado del enlace
+      event.preventDefault();
+
+      // Obtiene el identificador de la sección a la que el enlace debe dirigirse
+      var targetId = navLink.getAttribute("href").substring(1);
+
+      // Obtiene la sección correspondiente a partir de su identificador
+      var targetSection = document.getElementById(targetId);
+
+      // Calcula la posición de la sección en la página
+      var sectionOffset = targetSection.offsetTop;
+
+      // Realiza el desplazamiento suave hacia la sección
+      window.scrollTo({
+        top: sectionOffset,
+        behavior: "smooth" // Desplazamiento suave
+      });
+    });
+  });
+});
+
+
+window.addEventListener("scroll", function() {
+  var navbar = document.getElementById("navbar");
+  if (window.pageYOffset > 0) {
+      navbar.classList.add("show", "fixed-top");
+  } else {
+      navbar.classList.remove("show", "fixed-top");
+  }
+});

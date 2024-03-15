@@ -1,28 +1,139 @@
-.card {
-    width: 250px; /* Ancho de la tarjeta */
-    margin-bottom: 30px;
-    transition: transform 0.3s ease; /* Transición suave al hacer hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  }
+
+  /*=== INICIO portfolio === */
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.proyecto1 span {
+  background: #b80b0b;
+}
+
+.proyecto2 span {
+  background: #4d340e;
+}
+
+.proyecto3 span {
+  background: #3687d3;
+}
+
+.proyecto4 span {
+  background: #075488;
+}
+
+.proyecto5 span {
+    background: #095f06;
+}
+
+.proyecto6 span {
+    background: #5f063a;
+}
   
-  .card:hover {
-    transform: translateY(-5px); /* Levantar la tarjeta al hacer hover */
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+}
+
+.swiper-slide p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+.swiper-slide svg {
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+
+.proyecto1 {
+  background: linear-gradient(to top, #1a1212c9, #1e282cf3, #2c536400),
+    url(/assets/img/portfolio/biason-automotores.png)
+      no-repeat 50% 50% / cover;
+}
+
+.proyecto2 {
+    background: linear-gradient(to top, #494949c9, #1e282cf3, #111618a2),
+  url(/assets/img/portfolio/ml-legales.png)
+      no-repeat 50% 50% / cover;
+}
+
+.proyecto3 {
+    background: linear-gradient(to top, #494949c9, #1e282cf3, #111618a2),
+    url("/assets/img/portfolio/tea.png")
+      no-repeat 50% 50% / cover;
+}
+
+.proyecto4 {
+  background: linear-gradient(to top, #0f2027, #13313bcc, #162d36a4),
+    url("/assets/img/portfolio/labancaria.png")
+      no-repeat 50% 50% / cover;
+}
+
+.proyecto5 {
+  background: linear-gradient(to top, #0f2027, #12262cb2, #1e2a30c4),
+    url("/assets/img/portfolio/escuela-futbol.png")
+      no-repeat 50% 50% / cover;
+}
+
+.proyecto6 {
+    background: linear-gradient(to top, #0f2027, #12262cb2, #1e2a30c4),
+      url("/assets/img/portfolio/ecommerce-vtex.mp4")
+        no-repeat 50% 50% / cover;
   }
-  
-  .card-img-top {
-    height: 150px; /* Altura de la imagen */
-    object-fit: cover; /* Escalar la imagen para que se ajuste */
-  }
-  
-  .card-title {
-    font-size: 1.2rem; /* Tamaño del título */
-  }
-  
-  .card-text {
-    font-size: 1rem; /* Tamaño del texto */
-  }
-  
-  .text-muted {
-    font-size: 0.9rem; /* Tamaño del texto de lenguajes utilizados */
-  }
-  
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.icono-swiper {
+    width: 25px;
+    height: 25px;
+    margin: 0.5rem;
+}

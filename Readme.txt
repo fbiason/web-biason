@@ -7,7 +7,7 @@ Paleta de Colores:
 
 GA4: 28-7-236
 
-Actualización: 13-12-23
-*Actuailzación de Portfolio
+Actualización: 15-03-24
 
-Las modificaciones estan en CSS (SASS no está actualizado)
+cd assets/scss
+sass --watch style.scss:../css/style.css

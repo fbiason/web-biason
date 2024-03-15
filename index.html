@@ -27,6 +27,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -35,6 +38,10 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -42,972 +49,841 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1><a href="index.html">Lic. Franco Biason</a></h1>
-      <h2>Bienvenidos a mi sitio web, me llamo Franco Biason<br> soy
-        <span> Licenciado en Administración</span> & Web Developer</h2>
-
-      <nav id="navbar" class="navbar">
+      <!-- ======= Header ======= -->
+      <nav class="hide" id="navbar">
         <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About me</a></li>
           <li><a class="nav-link" href="#resume">Formación y Experiencia</a></li>
           <li><a class="nav-link" href="#services">Servicios</a></li>
-          <li><a class="nav-link" href="#portfolio">Certificaciones</a></li>
-          <li><a class="nav-link" href="#works">Portfolio</a></li>
+          <li><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contacto</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <a href="https://www.facebook.com/franco.biason" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/f.biason/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.behance.net/francobiason" class="behance"><i class="bi bi-behance"></i></a>
-        <a href="https://github.com/fbiason" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/francobiason/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="btn-cv">
-        <button type="button" class="btn btn-dark mt-5">
-          <a href="/assets/Curriculum Biason Franco.pdf" download>Descargar CV</a>
-        </button>
-    </div>
-    </div>
-  </header><!-- End Header -->
+      </nav>
+      
+      <header id="header">
+        <div class="container">
+          <h1>Lic. Franco Biason</h1>
+          <h2>Bienvenidos a mi sitio web, me llamo Franco Biason<br> soy
+            <span> Licenciado en Administración</span> & Web Developer</h2>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link active" href="#header">Home</a></li>
+              <li><a class="nav-link" href="#about">About me</a></li>
+              <li><a class="nav-link" href="#resume">Formación y Experiencia</a></li>
+              <li><a class="nav-link" href="#services">Servicios</a></li>
+              <li><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
+              <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-link" href="#contact">Contacto</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <div class="social-links">
+            <a href="https://www.facebook.com/franco.biason" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/f.biason/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.behance.net/francobiason" class="behance"><i class="bi bi-behance"></i></a>
+            <a href="https://github.com/fbiason" class="github"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/francobiason/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+          <div class="btn-cv">
+            <button type="button" class="btn btn-dark mt-5">
+              <a href="/assets/Curriculum Biason Franco.pdf" download>Descargar CV</a>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
 
-  <!-- ======= About Me ======= -->
-  <div class="about-me container">
-    <div class="section-title">
-      <h2>About me</h2>
-      <p>Lic. Franco Biason</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4" data-aos="fade-right">
-        <img src="assets/img/biason.jpg" class="img-fluid" alt="" />
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+      <div class="section-title">
+        <h2>About me</h2>
+        <p>Lic. Franco Biason</p>
       </div>
-      <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-        <h3>Management &amp; Web Developer</h3>
+  
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/biason.jpg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Management &amp; Web Developer</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="mt-3">
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong>
+                  <span>8 Marzo 1991</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong>
+                  <span>2966 44-9951</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Localidad:</strong>
+                  <span>Rio Gallegos, Santa Cruz</span>
+                </li>
+              </ul>
+            </div>
+            <h3></h3>
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <strong>Título:</strong>
+                  <span>Licenciado en Administración</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Mail:</strong> <span>franco.biason@gmail.com</span>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <strong>Disponibilidad:</strong>
+                  <span>Part time</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p style="text-align: justify">
+            Soy licenciado en administración, me forme en la Universidad Nacional
+            de la Patagonia Austral (Santa Cruz, Argentina), tengo amplia
+            experiencia en desarrollo web y gestión de redes sociales. Cuento con
+            iniciativa y gran predisposición. Busco capacitarme constantemente y
+            me adapto fácilmente a nuevos entornos de trabajo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End About Me -->
+  
+      <!-- ======= Skills  ======= -->
+      <div class="skills container">
+  
+        <div class="section-title">
+          <h2>Hard Skills</h2>
+        </div>
+  
+        <div class="row skills-content">
+  
+          <div class="col-lg-6">
+  
+            <div class="progress">
+              <span class="skill"> <img src="assets/img/skills/html.png" alt="HTML" class="skill-logo"> HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/css.png" alt="CSS" class="skill-logo"> CSS <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/js.png" alt="JS" class="skill-logo">JavaScript <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/angular.png" alt="Angular" class="skill-logo">Angular <i class="val">30%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/react.png" alt="React" class="skill-logo">React <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+          <div class="col-lg-6">
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/wordpress.png" alt="WordPress" class="skill-logo">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/excel.png" alt="Excel" class="skill-logo"> Excel <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/word.png" alt="Word" class="skill-logo"> Word <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/drive.png" alt="Google Drive" class="skill-logo"> Google Drive <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+  
+  
+            <div class="progress">
+              <span class="skill"><img src="assets/img/skills/vtex.png" alt="VTEX" class="skill-logo">VTEX <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          </div>
+  
+      </div><!-- End Hard Skills -->
+  
+      <!-- ======= Soft Skills ======= -->
+      <div class="interests container">
+  
+        <div class="section-title">
+          <h2>Soft Skills</h2>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-chat-1-line" style="color:  #33B5E5;"></i>
+              <h3>Comunicación efectiva</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-group-line" style="color:  #FFBB33 ;"></i>
+              <h3>Trabajo en equipo</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-tools-line" style="color: #FF8800;"></i>
+              <h3>Resolución de problemas</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-refresh-line" style="color: #99CC00;"></i>
+              <h3>Adaptabilidad</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-award-line" style="color:  #9933CC;"></i>
+              <h3>Liderazgo</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-lightbulb-flash-line" style="color:  #FF4444 ;"></i>
+              <h3>Pensamiento Crítico</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-paint-brush-line" style="color: #FF99CC;"></i>
+              <h3>Creatividad</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-folder-line" style="color:  #6699CC;"></i>
+              <h3>Organización</h3>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div><!-- End Soft Skills -->
+  
+<!-- ======= Works ======= -->
+<div class="works container">
+
+  <div class="section-title">
+    <h2>Experiencia</h2>
+    <p>Experiencia Profesional</p>
+  </div>
+
+  <div class="works-grid">
+    <div class="work-item">
+      <img src="assets/img/works/logo-even.png" class="testimonial-img" alt="Even Cabañas Prefabricadas">
+      <h2>Even Cabañas Prefabricadas</h2><br><br>
+      <h3>Asesor Administrativo y Financiero</h3>
+      <p>
+        Responsable de la gestión financiera y administrativa de la empresa, incluyendo presupuestos, informes financieros, análisis de costos, planificación estratégica, y optimización de recursos.
+      </p>
+      <h4>Oct-22 - Presente</h4>
+    </div><!-- End Even -->
+
+    <div class="work-item">
+      <img src="assets/img/works/inset-logo.png" class="testimonial-img" alt="Instituto Superior de Enseñanza Técnica (InSET)">
+      <h2>Instituto Superior de Enseñanza Técnica (InSET)</h2>
+      <h3>Docente</h3>
+      <p>
+        Materias a cargo: <br>
+        Derecho Laboral y Tributario.
+        Principios de Administración.
+        Gestión de Recursos Humanos.
+        Diseño y Gestión de Procedimientos Administrativos.
+      </p>
+      <h4>Abr-22- Presente</h4>
+    </div><!-- End InSET -->
+  </div>
+
+  <div class="works-grid">
+    <div class="work-item">
+      <img src="assets/img/works/cps-logo.png" class="testimonial-img" alt="Caja de Previsión Social">
+      <h2>Caja de Previsión Social</h2><br>
+      <h3>Administrativo</h3>
+      <p>Confección y control de presupuesto. 
+        Ejecuciones presupuestarias.
+        Balances. 
+      </p>
+      <h4>Abr-22- Presente</h4>
+    </div><!-- End CPS-->
+
+    <div class="work-item">
+      <img src="assets/img/works/logo-coder.png" class="testimonial-img" alt="CoderHouse">
+      <h2>CoderHouse</h2><br>
+      <h3>Tutor</h3>
+      <p>
+        Tutor Community Manager & Publicidad. Tutor Customer Experience (CX).
+      </p>
+      <h4>Ago-22 - Presente</h4>
+    </div><!-- End CoderHouse -->
+  </div>
+
+    <div class="works-grid">
+    <div class="work-item">
+      <img src="assets/img/works/web-developer.png" class="testimonial-img" alt="Web Developer">
+      <h2>Freelance</h2><br>
+      <h3>Web Developer</h3>
+      <p>Desarrollo, mantenimiento y optimización web: Crear y mantener sitios web funcionales y atractivos utilizando lenguajes de programación como HTML, CSS, JavaScript y React.
+      </p>
+      <h4>Feb-21 - Presente</h4>
+    </div><!-- End Freelance -->
+
+    <div class="work-item">
+      <img src="assets/img/works/community-manager.png" class="testimonial-img" alt="Community Manager">
+      <h2>Freelance</h2><br>
+      <h3>Social Media</h3>
+      <p>Construcción, gestión y administración de redes sociales. Creación y planificación de contenido. Interacción y participación en la comunidad. Monitoreo y análisis de métricas.
+      </p>
+      <h4>Feb-21 - Presente</h4>
+    </div><!-- End Freelance -->
+  </div>
+
+</div><!-- End Works -->
+
+    </section><!-- End About Section -->
+  
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2>Resumen</h2>
+          <p>Formación</p>
+        </div>
+  
         <div class="row">
           <div class="col-lg-6">
-            <ul class="mt-3">
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>Cumpleaños:</strong>
-                <span>8 Marzo 1991</span>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>Teléfono:</strong>
-                <span>2966 44-9951</span>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>Localidad:</strong>
-                <span>Rio Gallegos, Santa Cruz</span>
-              </li>
-            </ul>
+  
+            <h3 class="resume-title">Educación</h3>
+            <div class="resume-item">
+              <h4>Licenciado en Administración</h4>
+              <h5>Julio 2018</h5>
+              <p><em>Universidad Nacional de la Patagonia Austral (UNPA)</em></p>
+              <p>Capacidades como Licenciado en Administración:<br>
+                <ul>             
+                <li>Identificar oportunidades de negocio y emprender las actividades que permitan explotarlas.</li>
+                <li>Fomentar, dirigir o asesorar en la creación de organizaciones mediante la aplicación, adaptación e innovación de conceptos, métodos y técnicas de administración.</li>
+                <li>Diseñar, implementar y evaluar organizaciones con su estructura, sistemas y recursos que la hagan viable.</li>
+                <li>Participar en el estudio, definición, conducción y evaluación de estructuras y políticas en cuanto a producción, comercialización, finanzas, recursos humanos, planeamiento y control.</li>
+                <li>Elaborar y evaluar proyectos de inversión.</li>
+                <li>Integrar, dirigir y coordinar equipos de trabajo interdisciplinario.</li>
+                <li>Optimizar los resultados y recursos de las organizaciones mediante la utilización de las ciencias económicas y de la administración.</li>
+              </ul>
+  
+                </p>
+            </div>
+  
+            <div class="resume-item">
+              <h4>Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial</h4>
+              <h5>Cursando 1er año</h5>
+              <p><em>Centro Politécnico Superior Malvinas Argentinas</em></p>
+              <p>Capacidades como Téc. Sup. en Ciencia de Datos e I.A.:<br>
+                <ul>             
+                <li>Capacidad para realizar proyectos de innovación que involucren actividades tanto del campo de la Ciencia de Datos como de la Inteligencia Artificial.</li>
+                <li>Resolución de situaciones de trabajo que involucren el proceso de grandes volúmenes de datos, mediante técnicas específicas para explorar, limpiar y preparar diversas fuentes de datos antes de su procesamiento.</li>
+                <li>Diseño, desarrollo e implementación de técnicas de aprendizaje automático (Machine Learning) para su utilización aplicada a través de modelos predictivos, sistemas de recomendación, scoring, reconocimiento de segmenteos y clusters, entre otras.</li>
+                <li>Realización de trabajos colaborativos e interdiciplinarios para el desarrollo de sistemas en el campo de la I.A. a partir de los fundamentos del Aprendizaje Profundo (Deep Learning).</li>
+                <li>Aplicación de sistemas de I.A. para procesar audios, textos y habla a partir de aplicaciones que permitan, reconocimiento automático del habla, síntesis de música, chatbots, traducción automática, comprensión global del lenguaje natural, entre otras.</li>
+                <li>Implementación y modelación de soluciones informáticas, revalorizando tareas de programación y entrenamiento, así como mantenimiento, mejoras y actualizaciones de soluciones.</li>
+              </ul>
+                </p>
+            </div>  
+      
           </div>
-          <h3></h3>
           <div class="col-lg-6">
-            <ul>
-              <li>
-                <i class="bi bi-chevron-right"></i> <strong>Título:</strong>
-                <span>Licenciado en Administración</span>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <strong>Mail:</strong> <span>franco.biason@gmail.com</span>
-              </li>
-              <li>
-                <i class="bi bi-chevron-right"></i>
-                <strong>Disponibilidad:</strong>
-                <span>Part time</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p style="text-align: justify">
-          Soy licenciado en administración, me forme en la Universidad Nacional
-          de la Patagonia Austral (Santa Cruz, Argentina), tengo amplia
-          experiencia en desarrollo web y gestión de redes sociales. Cuento con
-          iniciativa y gran predisposición. Busco capacitarme constantemente y
-          me adapto fácilmente a nuevos entornos de trabajo.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- End About Me -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Hard Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill"> <img src="assets/img/skills/html.png" alt="HTML" class="skill-logo"> HTML <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            <h3 class="resume-title">Cursos y Capacitaciones</h3>
+            
+            
+            <div class="resume-item">
+              <h4>INTI #YoProgramo 4ta Edición (Argentina Programa)</h4>
+              <h5>Octubre 2022 - Mayo 2023</h5>
+              <p><em>Argentina Programa</em></p>
+              <p>Desarrollo Web y Aplicaciones. Desarrollo Front End Estático y Dinámico.
+                Base de datos. POO. Java. Back End con Spring Boot. DevOps.
+                </p>
             </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/css.png" alt="CSS" class="skill-logo"> CSS <i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/js.png" alt="JS" class="skill-logo">JavaScript <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/angular.png" alt="Angular" class="skill-logo">Angular <i class="val">30%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/react.png" alt="React" class="skill-logo">React <i class="val">50%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/wordpress.png" alt="WordPress" class="skill-logo">WordPress/CMS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/excel.png" alt="Excel" class="skill-logo"> Excel <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/word.png" alt="Word" class="skill-logo"> Word <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/drive.png" alt="Google Drive" class="skill-logo"> Google Drive <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-
-          <div class="progress">
-            <span class="skill"><img src="assets/img/skills/vtex.png" alt="VTEX" class="skill-logo">VTEX <i class="val">40%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-        </div>
-
-    </div><!-- End Hard Skills -->
-
-    <!-- ======= Soft Skills ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Soft Skills</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-chat-1-line" style="color:  #33B5E5;"></i>
-            <h3>Comunicación efectiva</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-group-line" style="color:  #FFBB33 ;"></i>
-            <h3>Trabajo en equipo</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-tools-line" style="color: #FF8800;"></i>
-            <h3>Resolución de problemas</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-refresh-line" style="color: #99CC00;"></i>
-            <h3>Adaptabilidad</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-award-line" style="color:  #9933CC;"></i>
-            <h3>Liderazgo</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-lightbulb-flash-line" style="color:  #FF4444 ;"></i>
-            <h3>Pensamiento Crítico</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #FF99CC;"></i>
-            <h3>Creatividad</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-folder-line" style="color:  #6699CC;"></i>
-            <h3>Organización</h3>
-          </div>
-        </div>
-
-      </div>
-
-    </div><!-- End Soft Skills -->
-
-    <!-- ======= Works ======= -->
-    <div class="works container">
-
-      <div class="section-title">
-        <h2>Works</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="works-item">
-              <img src="assets/img/works/logo-even.png" class="testimonial-img" alt="Even Cabañas Prefabricadas">
-              <h2>Even Cabañas Prefabricadas</h2><br>
-              <h3>Asesor Administrativo y Financiero</h3>
-              <p>
-              Responsable de la gestión financiera y administrativa de la empresa, incluyendo presupuestos, informes financieros, análisis de costos, planificación estratégica, y optimización de recursos.
-              </p>
-              <h4>Oct-22 - Presente</h4>
-            </div>
-          </div><!-- End Even -->
-
-          <div class="swiper-slide">
-            <div class="works-item">
-              <img src="assets/img/works/inset-logo.png" class="testimonial-img" alt="Instituto Superior de Enseñanza Técnica (InSET)">
-              <h2>Instituto Superior de Enseñanza Técnica (InSET)</h2>
-              <h3>Docente</h3>
-              <p>
-                Materias a cargo: <br>
-Derecho Laboral y Tributario.<br>
-Principios de Administración.<br>
-Gestión de Recursos Humanos.<br>
-Diseño y Gestión de Procedimientos Administrativos.
-              </p>
-              <h4>Abr-22- Presente</h4>
-            </div>
-          </div><!-- End InSET -->
-
-          <div class="swiper-slide">
-            <div class="works-item">
-              <img src="assets/img/works/cps-logo.png" class="testimonial-img" alt="Caja de Previsión Social">
-              <h2>Caja de Previsión Social</h2><br>
-              <h3>Administrativo</h3>
-              <p>Confección y control de presupuesto. <br>
-                Ejecuciones presupuestarias.<br>
-                Balances. <br>
-              </p>
-              <h4>Abr-22- Presente</h4>
-            </div>
-          </div><!-- End CPS-->
-
-          <div class="swiper-slide">
-            <div class="works-item">
-              <img src="assets/img/works/logo-coder.png" class="testimonial-img" alt="CoderHouse">
-              <h2>CoderHouse</h2><br>
-              <h3>Tutor</h3>
-              <p>
-                Tutor Community Manager & Publicidad.<br>    Tutor Customer Experience (CX).
-              </p>
-              <h4>Ago-22 - Presente</h4>
-            </div>
-          </div><!-- End CoderHouse -->
-
-          <div class="swiper-slide">
-            <div class="works-item">
-              <img src="assets/img/works/web-developer.png" class="testimonial-img" alt="Web Developer">
-              <h2>Freelance</h2><br>
-              <h3>Web Developer</h3>
-              <p>Desarrollo, mantenimiento y optimización web: Crear y mantener sitios web funcionales y atractivos utilizando lenguajes de programación como HTML, CSS, JavaScript y React.
-              </p>
-              <h4>Feb-21 - Presente</h4>
-            </div>
-          </div><!-- End Freelance -->
-
-          <div class="swiper-slide">
-            <div class="works-item">
-              <img src="assets/img/works/community-manager.png" class="testimonial-img" alt="Community Manager">
-              <h2>Freelance</h2><br>
-              <h3>Social Media</h3>
-              <p>Construcción, gestión y administración de redes sociales. Creación y planifiación de contenido. Interacción y participación en la comunidad. Monitoreo y análisis de métricas.
-              </p>
-              <h4>Feb-21 - Presente</h4>
-            </div>
-          </div><!-- End Freelance -->
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel works-carousel">
-
-      </div>
-
-    </div><!-- End Works  -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resumen</h2>
-        <p>Formación y Experiencia</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-
-          <h3 class="resume-title">Educación</h3>
-          <div class="resume-item">
-            <h4>Licenciado en Administración</h4>
-            <h5>Julio 2018</h5>
-            <p><em>Universidad Nacional de la Patagonia Austral (UNPA)</em></p>
-            <p>Capacidades como Licenciado en Administración:<br>
-              <ul>             
-              <li>Identificar oportunidades de negocio y emprender las actividades que permitan explotarlas.</li>
-              <li>Fomentar, dirigir o asesorar en la creación de organizaciones mediante la aplicación, adaptación e innovación de conceptos, métodos y técnicas de administración.</li>
-              <li>Diseñar, implementar y evaluar organizaciones con su estructura, sistemas y recursos que la hagan viable.</li>
-              <li>Participar en el estudio, definición, conducción y evaluación de estructuras y políticas en cuanto a producción, comercialización, finanzas, recursos humanos, planeamiento y control.</li>
-              <li>Elaborar y evaluar proyectos de inversión.</li>
-              <li>Integrar, dirigir y coordinar equipos de trabajo interdisciplinario.</li>
-              <li>Optimizar los resultados y recursos de las organizaciones mediante la utilización de las ciencias económicas y de la administración.</li>
-            </ul>
-
-              </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Tecnicatura Superior en Ciencia de Datos e Inteligencia Artificial</h4>
-            <h5>Cursando 1er año</h5>
-            <p><em>Centro Politécnico Superior Malvinas Argentinas</em></p>
-            <p>Capacidades como Téc. Sup. en Ciencia de Datos e I.A.:<br>
-              <ul>             
-              <li>Capacidad para realizar proyectos de innovación que involucren actividades tanto del campo de la Ciencia de Datos como de la Inteligencia Artificial.</li>
-              <li>Resolución de situaciones de trabajo que involucren el proceso de grandes volúmenes de datos, mediante técnicas específicas para explorar, limpiar y preparar diversas fuentes de datos antes de su procesamiento.</li>
-              <li>Diseño, desarrollo e implementación de técnicas de aprendizaje automático (Machine Learning) para su utilización aplicada a través de modelos predictivos, sistemas de recomendación, scoring, reconocimiento de segmenteos y clusters, entre otras.</li>
-              <li>Realización de trabajos colaborativos e interdiciplinarios para el desarrollo de sistemas en el campo de la I.A. a partir de los fundamentos del Aprendizaje Profundo (Deep Learning).</li>
-              <li>Aplicación de sistemas de I.A. para procesar audios, textos y habla a partir de aplicaciones que permitan, reconocimiento automático del habla, síntesis de música, chatbots, traducción automática, comprensión global del lenguaje natural, entre otras.</li>
-              <li>Implementación y modelación de soluciones informáticas, revalorizando tareas de programación y entrenamiento, así como mantenimiento, mejoras y actualizaciones de soluciones.</li>
-            </ul>
-              </p>
-          </div>
-
-          <h3 class="resume-title">Cursos y Capacitaciones</h3>
-          <div class="resume-item">
-            <h4>INTI #YoProgramo 4ta Edición (Argentina Programa)</h4>
-            <h5>Octubre 2022 - Mayo 2023</h5>
-            <p><em>Argentina Programa</em></p>
-            <p>Desarrollo Web y Aplicaciones. Desarrollo Front End Estático y Dinámico.
-              Base de datos. POO. Java. Back End con Spring Boot. DevOps.
-              </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Google Skill Shop</h4>
-            <h5>Marzo 2023</h5>
-            <p>Google Analytics</p>
-          </div>
-
-          <div class="resume-item">
-            <h4>INTI #SeProgramar (Argentina Programa)</h4>
-            <h5>Julio 2023</h5>
-            <p>GobStones. JavaScript. Ruby.</p>
-          </div>
-
-          <div class="resume-item">
-            <h4>CoderHouse</h4>
-            <h5>Marzo 2022 - Mayo 2022 // Junio 2022 - Agosto 2022</h5>
-            <p>Desarrollo Web // JavaScript.</p>
-          </div>
-
-          <div class="resume-item">
-            <h4>NETWORK BUSINESS SCHOOL</h4>
-            <h5>Febrero 2021 - Julio 2021</h5>
-            <p>Máster en Marketing Digital y Analítica Web, Desarrollo de páginas
-              web, contenido digital/multimedia y recursos informáticos.
-              </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>INSTITUTO NACIONAL DE LA ADMINISTRACIÓN PÚBLICA (INAP)</h4>
-            <h5>Julio 2021</h5>
-            <p>Curso Excel 2013 Avanzado: funciones avanzadas.
-              </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>UNIVERSIDAD NACIONAL DE LA PATAGONIA AUSTRAL (UNPA)</h4>
-            <h5>Junio 2020</h5>
-            <p>Marketing, Concepción y Aplicación Práctica.</p>
-          </div>
-
-        </div>
-        <div class="col-lg-6">
-          <h3 class="resume-title">Experiencia Profesional</h3>
-          <div class="resume-item">
-            <h4>Even Cabañas Prefabricadas</h4>
-            <h5>Octubre 2022 - Presente</h5>
-            <p><em>Asesor de Administrativo y Financiero.</em></p>
-            <p>
-            <ul>
-              <li>Administrar ingresos y egresos de la empresa.</li>
-              <li>Establecer proyecciones financieras.</li>
-              <li>Planificación y formulación de estrategias.</li>
-            </ul>
-            </p>
-          </div>
-          <div class="resume-item">
-            <h4>INSTITUTO SUPERIOR DE ENSEÑANZA TÉCNICA (InSET)</h4>
-            <h5>Abril 2022 - Presente</h5>
-            <p><em>Docente</em></p>
-            <p>
-            <ul>
-              <li>Derecho Laboral y Tributario.</li>
-              <li>Principios de Administración.</li>
-              <li>Gestión de Recursos Humanos.</li>
-              <li>Diseño y Gestión de Procedimientos Administrativos.
-              </li>
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Caja de Previsión Social</h4>
-            <h5>Septiembre 2013 - Presente</h5>
-            <p><em>Administrativo</em></p>
-            <p>
-            <ul>
-              <li>Confección y control de presupuesto.</li>
-              <li>Ejecuciones presupuestarias.</li>
-              <li>Balances.</li>
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>CoderHouse</h4>
-            <h5>Agosto 2022 - Presente</h5>
-            <p><em>Tutor</em></p>
-            <p>
-            <ul>
-              <li>Tutor Community Manager & Publicidad.</li>
-              <li>Tutor Customer Experience (CX)</li>
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Freelancer</h4>
-            <h5>Junio 2022 - Presente</h5>
-            <p><em>Web Developer</em></p>
-            <p>
-            <ul>
-              <li>Desarrollo, mantenimiento y optimización web: Crear y mantener sitios web funcionales y atractivos utilizando lenguajes de programación como HTML, CSS, JavaScript y React.</li>
-            </ul>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Freelancer</h4>
-            <h5>Febrero 2021 - Junio 2023</h5>
-            <p><em>Social Media</em></p>
-            <p>
-            <ul>
-              <li>Construcción, gestión y administración de redes sociales. Creación y planifiación de contenido. Interacción y participación en la comunidad. Monitoreo y análisis de métricas.</li>
-            </ul>
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Servicios</h2>
-        <p>Mis servicios</p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch ">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-code-curly"></i></div>
-            <h4>Desarrollo Web</h4>
-            <p>Ofrezco soluciones creativas y funcionales para la creación y diseño de páginas web a medida. Desde sitios informativos hasta plataformas de comercio electrónico, mi enfoque se centra en la experiencia del usuario y el rendimiento. Utilizo tecnologías de vanguardia para desarrollar sitios web optimizados y adaptado a todas las plataformas que reflejen la identidad y objetivos de tu negocio o marca personal.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-cog"></i></div>
-            <h4>Mantenimiento y Optimización Web</h4>
-            <p>Desde las actualizaciones ténicas y de seguridad hasta mejora de la velocidad de carga y la experiencia del usuairio. Mi objetivo es mantener el sitio web en condiciones ideales para alcanzar los objetivos comerciales.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-rocket"></i></div>
-            <h4>Marketing & Publicidad</h4>
-            <p>Impulso el crecimiento de tu negocio mediante estrategias de marketing y publicidad efectivas. Desde campañas online hasta publicidad tradicional, mi enfoque se basa en la segmentación del mercado y la creación de mensajes persuasivos que impacten con la audiencia. Mi objetivo es generar resultados tangibles y aumentar la visibilidad de la marca.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-target-lock"></i></div>
-            <h4>Planificación estratégica</h4>
-            <p>Establezco planes estratégicos personalizados para alcanzar los objetivos a largo plazo de tu empresa. Utilizando un enfoque analítico y orientado a datos, identifico oportunidades de crecimiento, defino ventajas competitivas y establezco una hoja de ruta clara para el éxito empresarial.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-dollar-circle"></i></div>
-            <h4>Gestión Financiera</h4>
-            <p>Proporciono asesoramiento financiero integral y soluciones para optimizar la salud financiera de tu empresa. Desde la gestión de presupuestos hasta el análisis de costos, oriento la toma de decisiones en base a información, estadísticas y estratégicas para mejorar la rentabilidad y el flujo de efectivo.</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Services Section -->
-
-  <!-- ======= Certificaciones Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Certificaciones</h2>
-        <p>Mis Certificaciones</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">Todas</li>
-            <li data-filter=".filter-web">Web Developer</li>
-            <li data-filter=".filter-management">Management</li>
-            <li data-filter=".filter-marketing">Marketing</li>
-            <li data-filter=".filter-tics">TICs</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-management">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/management/Titulo Universitario.jpg" class="img-fluid" alt="Titulo Universitario - Licenciado en Administración">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>Lic. en Administración</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/management/Titulo Universitario.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Titulo Universitario - Licenciado en Administración"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/web-developer/argentina_programa_2022.jpg" class="img-fluid" alt="Argentina Programa #SeProgramar">
-            <div class="portfolio-info">
-              <h4>INTI</h4>
-              <p>Argentina Programa #SeProgramar</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/web-developer/argentina_programa_2022.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Argentina Programa #SeProgramar"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/web-developer/Desarrollo Web - CoderHouse.png" class="img-fluid" alt="Coder House - Desarrollo Web">
-            <div class="portfolio-info">
-              <h4>CoderHouse</h4>
-              <p>Desarrollo Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/web-developer/Desarrollo Web - CoderHouse.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coder House - Desarrollo Web"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/web-developer/JavaScript - CoderHouse.png" class="img-fluid" alt="Coder House - Java Script">
-            <div class="portfolio-info">
-              <h4>CoderHouse</h4>
-              <p>Java Script</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/web-developer/JavaScript - CoderHouse.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coder House - Java Script"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/web-developer/google-analytics_page-0001.jpg" class="img-fluid" alt="Googel Analytics">
-            <div class="portfolio-info">
-              <h4>Google</h4>
+  
+            <div class="resume-item">
+              <h4>Google Skill Shop</h4>
+              <h5>Marzo 2023</h5>
               <p>Google Analytics</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/web-developer/google-analytics_page-0001.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Googel Analytics"><i class="bx bx-zoom-in"></i></a>
-              </div>
             </div>
+  
+            <div class="resume-item">
+              <h4>INTI #SeProgramar (Argentina Programa)</h4>
+              <h5>Julio 2023</h5>
+              <p>GobStones. JavaScript. Ruby.</p>
+            </div>
+  
+            <div class="resume-item">
+              <h4>CoderHouse</h4>
+              <h5>Marzo 2022 - Mayo 2022 // Junio 2022 - Agosto 2022</h5>
+              <p>Desarrollo Web // JavaScript.</p>
+            </div>
+  
+            <div class="resume-item">
+              <h4>NETWORK BUSINESS SCHOOL</h4>
+              <h5>Febrero 2021 - Julio 2021</h5>
+              <p>Máster en Marketing Digital y Analítica Web, Desarrollo de páginas
+                web, contenido digital/multimedia y recursos informáticos.
+                </p>
+            </div>
+  
+            <div class="resume-item">
+              <h4>INSTITUTO NACIONAL DE LA ADMINISTRACIÓN PÚBLICA (INAP)</h4>
+              <h5>Julio 2021</h5>
+              <p>Curso Excel 2013 Avanzado: funciones avanzadas.
+                </p>
+            </div>
+  
+            <div class="resume-item">
+              <h4>UNIVERSIDAD NACIONAL DE LA PATAGONIA AUSTRAL (UNPA)</h4>
+              <h5>Junio 2020</h5>
+              <p>Marketing, Concepción y Aplicación Práctica.</p>
+            </div>
+  
+  
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-management">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/management/Start Up Is Real.jpg" class="img-fluid" alt="#Think Thanks - Start Up Is Real">
-            <div class="portfolio-info">
-              <h4>#Think Thanks</h4>
-              <p>Star Up Is Real</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/management/Start Up Is Real.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="#Think Thanks - Start Up Is Real"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-management">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/management/Jornadas de Administración.jpg" class="img-fluid" alt="UNPA - Jornadas de Administracion">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>Jornadas de Administracion</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/management/Jornadas de Administración.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Jornadas de Administracion"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-management">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/management/IV-jornada.jpg" class="img-fluid" alt="UNPA - IV Jornadas UNPA Ciencias de la Administración: Desafíos y oportunidades actuales y futuras para la disciplina Administrativa en nuestro país y la región">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>IV Jornadas UNPA Ciencias de la Administracion</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/management/IV-jornada.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - IV Jornadas UNPA Ciencias de la Administración: Desafíos y oportunidades actuales y futuras para la disciplina Administrativa en nuestro país y la región"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col-lg-4 col-md-6 portfolio-item filter-management">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/management/III-jornada.jpg" class="img-fluid" alt="UNPA - III Jornadas UNPA Ciencias de la Administracion">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>III Jornadas UNPA Ciencias de la Administracion</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/management/III-jornadas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - III Jornadas UNPA Ciencias de la Administracion"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-management">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/management/Cambio, Liderazgo y Aprendizaje.jpg" class="img-fluid" alt="UNPA - Cambio, Liderazgo y Aprendizaje">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>Cambio, Liderazgo y Aprendizaje</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/management/Cambio, Liderazgo y Aprendizaje.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Cambio, Liderazgo y Aprendizaje"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/marketing/Master en Marketing Ditigal y Analítica Web.jpg" class="img-fluid" alt="Neetwork Business School - Master en Marketing Ditigal y Analítica Web">
-            <div class="portfolio-info">
-              <h4>Neetwork Business School</h4>
-              <p>Master en Marketing Ditigal y Analítica Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/marketing/Master en Marketing Ditigal y Analítica Web.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Neetwork Business School - Master en Marketing Ditigal y Analítica Web"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/marketing/Marketing, Concepción y Aplicación Práctica.jpg" class="img-fluid" alt="UNPA - Marketing, Concepción y Aplicación Práctica">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>Marketing, Concepción y Aplicación Práctica</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/marketing/Marketing, Concepción y Aplicación Práctica.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Marketing, Concepción y Aplicación Práctica"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/marketing/creatividad.jpg" class="img-fluid" alt="Universidad Blas Pascal - Creatividad">
-            <div class="portfolio-info">
-              <h4>Universidad Blas Pascal</h4>
-              <p>Creatividad</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/marketing/creatividad.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Universidad Blas Pascal - Creatividad"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/marketing/Calidad en los servicios turísticos y atención al cliente.jpg" class="img-fluid" alt="UNPA - Calidad en los servicios turísticos y atención al cliente">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>Calidad en los servicios turísticos y atención al cliente</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/marketing/Calidad en los servicios turísticos y atención al cliente.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Calidad en los servicios turísticos y atención al cliente"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 portfolio-item filter-tics">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/TIC/Jornadas de Informática.jpg" class="img-fluid" alt="UNPA - Jornadas de Informática">
-            <div class="portfolio-info">
-              <h4>UNPA</h4>
-              <p>Jornadas de Informática</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/TIC/Jornadas de Informática.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Jornadas de Informática"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-tics">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certificaciones/TIC/Excel - Funciones avanzadas.jpg" class="img-fluid" alt="INAP - Excel Funciones Avanzadas">
-            <div class="portfolio-info">
-              <h4>INAP</h4>
-              <p>Excel Funciones Avanzadas</p>
-              <div class="portfolio-links">
-                <a href="assets/img/certificaciones/TIC/Excel - Funciones avanzadas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="INAP - Excel Funciones Avanzadas"><i class="bx bx-zoom-in"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
+  
       </div>
-
-    </div>
-  </section><!-- End Certificaciones Section -->
+    </section><!-- End Resume Section -->
+  
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2>Servicios</h2>
+          <p>Mis servicios</p>
+        </div>
+  
+        <div class="row">
+  
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-code-curly"></i></div>
+              <h4>Desarrollo Web</h4>
+              <p>Ofrezco soluciones creativas y funcionales para la creación y diseño de páginas web a medida. Desde sitios informativos hasta plataformas de comercio electrónico, mi enfoque se centra en la experiencia del usuario y el rendimiento. Utilizo tecnologías de vanguardia para desarrollar sitios web optimizados y adaptado a todas las plataformas que reflejen la identidad y objetivos de tu negocio o marca personal.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-cog"></i></div>
+              <h4>Mantenimiento y Optimización Web</h4>
+              <p>Desde las actualizaciones ténicas y de seguridad hasta mejora de la velocidad de carga y la experiencia del usuairio. Mi objetivo es mantener el sitio web en condiciones ideales para alcanzar los objetivos comerciales.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-rocket"></i></div>
+              <h4>Marketing & Publicidad</h4>
+              <p>Impulso el crecimiento de tu negocio mediante estrategias de marketing y publicidad efectivas. Desde campañas online hasta publicidad tradicional, mi enfoque se basa en la segmentación del mercado y la creación de mensajes persuasivos que impacten con la audiencia. Mi objetivo es generar resultados tangibles y aumentar la visibilidad de la marca.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-target-lock"></i></div>
+              <h4>Planificación estratégica</h4>
+              <p>Establezco planes estratégicos personalizados para alcanzar los objetivos a largo plazo de tu empresa. Utilizando un enfoque analítico y orientado a datos, identifico oportunidades de crecimiento, defino ventajas competitivas y establezco una hoja de ruta clara para el éxito empresarial.</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-dollar-circle"></i></div>
+              <h4>Gestión Financiera</h4>
+              <p>Proporciono asesoramiento financiero integral y soluciones para optimizar la salud financiera de tu empresa. Desde la gestión de presupuestos hasta el análisis de costos, oriento la toma de decisiones en base a información, estadísticas y estratégicas para mejorar la rentabilidad y el flujo de efectivo.</p>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Services Section -->
+  
+    <!-- ======= Certificaciones Section ======= -->
+    <section id="certificaciones" class="portfolio">
+      <div class="container">
+  
+        <div class="section-title">
+          <h2>Certificaciones</h2>
+          <p>Mis Certificaciones</p>
+        </div>
+  
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todas</li>
+              <li data-filter=".filter-web">Web Developer</li>
+              <li data-filter=".filter-management">Management</li>
+              <li data-filter=".filter-marketing">Marketing</li>
+              <li data-filter=".filter-tics">TICs</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="row portfolio-container">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/management/Titulo Universitario.jpg" class="img-fluid" alt="Titulo Universitario - Licenciado en Administración">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>Lic. en Administración</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/management/Titulo Universitario.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Titulo Universitario - Licenciado en Administración"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/web-developer/argentina_programa_2022.jpg" class="img-fluid" alt="Argentina Programa #SeProgramar">
+              <div class="portfolio-info">
+                <h4>INTI</h4>
+                <p>Argentina Programa #SeProgramar</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/web-developer/argentina_programa_2022.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Argentina Programa #SeProgramar"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/web-developer/Desarrollo Web - CoderHouse.png" class="img-fluid" alt="Coder House - Desarrollo Web">
+              <div class="portfolio-info">
+                <h4>CoderHouse</h4>
+                <p>Desarrollo Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/web-developer/Desarrollo Web - CoderHouse.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coder House - Desarrollo Web"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/web-developer/JavaScript - CoderHouse.png" class="img-fluid" alt="Coder House - Java Script">
+              <div class="portfolio-info">
+                <h4>CoderHouse</h4>
+                <p>Java Script</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/web-developer/JavaScript - CoderHouse.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Coder House - Java Script"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/web-developer/google-analytics_page-0001.jpg" class="img-fluid" alt="Googel Analytics">
+              <div class="portfolio-info">
+                <h4>Google</h4>
+                <p>Google Analytics</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/web-developer/google-analytics_page-0001.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Googel Analytics"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/management/Start Up Is Real.jpg" class="img-fluid" alt="#Think Thanks - Start Up Is Real">
+              <div class="portfolio-info">
+                <h4>#Think Thanks</h4>
+                <p>Star Up Is Real</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/management/Start Up Is Real.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="#Think Thanks - Start Up Is Real"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/management/Jornadas de Administración.jpg" class="img-fluid" alt="UNPA - Jornadas de Administracion">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>Jornadas de Administracion</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/management/Jornadas de Administración.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Jornadas de Administracion"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/management/IV-jornada.jpg" class="img-fluid" alt="UNPA - IV Jornadas UNPA Ciencias de la Administración: Desafíos y oportunidades actuales y futuras para la disciplina Administrativa en nuestro país y la región">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>IV Jornadas UNPA Ciencias de la Administracion</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/management/IV-jornada.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - IV Jornadas UNPA Ciencias de la Administración: Desafíos y oportunidades actuales y futuras para la disciplina Administrativa en nuestro país y la región"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/management/III-jornada.jpg" class="img-fluid" alt="UNPA - III Jornadas UNPA Ciencias de la Administracion">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>III Jornadas UNPA Ciencias de la Administracion</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/management/III-jornadas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - III Jornadas UNPA Ciencias de la Administracion"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-management">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/management/Cambio, Liderazgo y Aprendizaje.jpg" class="img-fluid" alt="UNPA - Cambio, Liderazgo y Aprendizaje">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>Cambio, Liderazgo y Aprendizaje</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/management/Cambio, Liderazgo y Aprendizaje.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Cambio, Liderazgo y Aprendizaje"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/marketing/Master en Marketing Ditigal y Analítica Web.jpg" class="img-fluid" alt="Neetwork Business School - Master en Marketing Ditigal y Analítica Web">
+              <div class="portfolio-info">
+                <h4>Neetwork Business School</h4>
+                <p>Master en Marketing Ditigal y Analítica Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/marketing/Master en Marketing Ditigal y Analítica Web.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Neetwork Business School - Master en Marketing Ditigal y Analítica Web"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/marketing/Marketing, Concepción y Aplicación Práctica.jpg" class="img-fluid" alt="UNPA - Marketing, Concepción y Aplicación Práctica">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>Marketing, Concepción y Aplicación Práctica</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/marketing/Marketing, Concepción y Aplicación Práctica.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Marketing, Concepción y Aplicación Práctica"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/marketing/creatividad.jpg" class="img-fluid" alt="Universidad Blas Pascal - Creatividad">
+              <div class="portfolio-info">
+                <h4>Universidad Blas Pascal</h4>
+                <p>Creatividad</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/marketing/creatividad.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Universidad Blas Pascal - Creatividad"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-marketing">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/marketing/Calidad en los servicios turísticos y atención al cliente.jpg" class="img-fluid" alt="UNPA - Calidad en los servicios turísticos y atención al cliente">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>Calidad en los servicios turísticos y atención al cliente</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/marketing/Calidad en los servicios turísticos y atención al cliente.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Calidad en los servicios turísticos y atención al cliente"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-tics">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/TIC/Jornadas de Informática.jpg" class="img-fluid" alt="UNPA - Jornadas de Informática">
+              <div class="portfolio-info">
+                <h4>UNPA</h4>
+                <p>Jornadas de Informática</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/TIC/Jornadas de Informática.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="UNPA - Jornadas de Informática"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-tics">
+            <div class="portfolio-wrap">
+              <img src="assets/img/certificaciones/TIC/Excel - Funciones avanzadas.jpg" class="img-fluid" alt="INAP - Excel Funciones Avanzadas">
+              <div class="portfolio-info">
+                <h4>INAP</h4>
+                <p>Excel Funciones Avanzadas</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/certificaciones/TIC/Excel - Funciones avanzadas.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="INAP - Excel Funciones Avanzadas"><i class="bx bx-zoom-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Certificaciones Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="works" class="">
-
-      <div class="content">
-        <h1 class="heading">Proyectos Web</h1>
-           <!-- ======= Web1 ======= -->
-        <a class="card" href="#!">
-          <div
-            class="front"
-            style="
-              background-image: url(/assets/img/portfolio/proyecto1-js.png);
-            "
-          >
-            <p>Proyecto Js</p>
-          </div>
-          <div class="back">
-            <div>
-              <p>Carrito de Compras</p>
-              <p>JS / DOM / Eventos / Workshop</p>
-              <button class="button">Ver Web</button>
-            </div>
-          </div></a>
-     <!-- ======= Web2 ======= -->
-  
-        <a class="card" href="#">
-          <div
-            class="front"
-            style="
-              background-image: url(/assets/img/portfolio/biason-automotores.png);
-            "
-          >
-            <p>Biason Automotores</p>
-          </div>
-          <div class="back">
-            <div>
-              <p>Agencia de compra venta de vehículos</p>
-              <p>HTML / CSS / JS</p>
-              <button class="button">Ver Web</button>
-            </div>
-          </div></a>
-
-
-          
-           <!-- ======= Web3 ======= -->
-        <a class="card" href="#">
-          <div
-            class="front"
-            style="
-              background-image: url(/assets/img/portfolio/ml-legales.png);
-            "
-          >
-            <p>ML Legales</p>
-          </div>
-          <div class="back">
-            <div>
-              <p>Estudio Jurídico</p>
-              <p>HTML / CSS / JS</p>
-              <button class="button">Ver Web</button>
-            </div>
-          </div></a>
-           <!-- ======= Web4 ======= -->
-        <a class="card" href="#">
-          <div
-            class="front"
-            style="background-image: url(/assets/img/portfolio/tea.png)"
-          >
-            <p>TEA</p>
-          </div>
-          <div class="back">
-            <div>
-              <p>Fundación TEA Santa Cruz</p>
-              <p>HTML / CSS / JS</p>
-              <button class="button">Ver Web</button>
-            </div>
-          </div></a>
-               <!-- ======= Web5 ======= -->
-        <a class="card" href="#">
-          <div
-            class="front"
-            style="
-              background-image: url(/assets/img/portfolio/labancaria.png);
-            "
-          >
-            <p>La Bancaria Santa Cruz</p>
-          </div>
-          <div class="back">
-            <div>
-              <p>Sindicato Bancario</p>
-              <p>WordPress</p>
-              <button class="button">Ver Web</button>
-            </div>
-          </div></a>
-             <!-- ======= Web6 ======= -->
-        <a class="card" href="#">
-          <div
-            class="front"
-            style="
-              background-image: url(/assets/img/portfolio/escuela-futbol.png);
-            "
-          >
-            <p>Escuela de Fútbol Rosales</p>
-          </div>
-          <div class="back">
-            <div>
-              <p>Escuela de Formación de Fútbol</p>
-              <p>HTML / CSS / JS</p>
-              <button class="button">Ver Web</button>
-            </div>
-          </div></a
-        >
-             <!-- ======= Web7 ======= -->
-             <a class="card-video" id="videoCard">
-              <div class="front-video">
-                <div class="video-container">
-                  <video autoplay loop muted playsinline>
-                    <source src="/assets/img/portfolio/ecommerce-vtex.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <p class="text-center mt-2">Ecommerce - VTEX</p>
-              </div>
-            </a>
-            <script>
-              document.getElementById('videoCard').addEventListener('click', function () {
-                const video = this.querySelector('video');
-            
-                if (video.requestFullscreen) {
-                  video.requestFullscreen();
-                } else if (video.mozRequestFullScreen) {
-                  video.mozRequestFullScreen();
-                } else if (video.webkitRequestFullscreen) {
-                  video.webkitRequestFullscreen();
-                } else if (video.msRequestFullscreen) {
-                  video.msRequestFullscreen();
-                }
-              });
-            </script>
-            
-                        
-             <!-- ======= Web8 ======= -->
-
+    <section id="portfolio" >
+      <div class="container">
+      <div class="section-title">
+        <h2>Web developer</h2>
+        <p>Portfolio</p>
       </div>
 
-    </section><!-- End Portfolio Section -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+             <!-- Proyecto 1 -->
+            <div class="swiper-slide proyecto1" >
+                <span>Biason Automotores</span>
+                <div>
+                    <h2>Agencia de compra venta de vehículos</h2>
+                    <p>
+                        <img src="assets/img/skills/html.png" alt="HTML" class="icono-swiper" style="vertical-align: middle;">
+                        <img src="assets/img/skills/css.png" alt="CSS" class="icono-swiper" style="vertical-align: middle;">
+                        <img src="assets/img/skills/js.png" alt="JS" class="icono-swiper" style="vertical-align: middle;">
+                    </p>
+                </div>
+            </div>
+             <!-- Proyecto 2 -->
+            <div class="swiper-slide proyecto2">
+                <span>ML Legales</span>
+                <div>
+                    <h2>Estudio Jurídico</h2>
+                    <p>
+                        <img src="assets/img/skills/html.png" alt="HTML" class="icono-swiper" style="vertical-align: middle;">
+                        <img src="assets/img/skills/css.png" alt="CSS" class="icono-swiper" style="vertical-align: middle;">
+                        <img src="assets/img/skills/js.png" alt="JS" class="icono-swiper" style="vertical-align: middle;">
+                    </p>
+                </div>
+            </div>
+      <!-- Proyecto 3 -->
+      <div class="swiper-slide proyecto3">
+        <span>TEA</span>
+        <div>
+            <h2>Fundación TEA Santa Cruz</h2>
+            <p>
+                <img src="assets/img/skills/html.png" alt="HTML" class="icono-swiper" style="vertical-align: middle;">
+                <img src="assets/img/skills/css.png" alt="CSS" class="icono-swiper" style="vertical-align: middle;">
+                <img src="assets/img/skills/js.png" alt="JS" class="icono-swiper" style="vertical-align: middle;">
+            </p>
+        </div>
+    </div>
+          <!-- Proyecto 4 -->
+          <div class="swiper-slide proyecto4">
+            <span>La Bancaria Santa Cruz</span>
+            <div>
+                <h2>Sindicato Bancario</h2>
+                <p>
+                    <img src="assets/img/skills/wordpress.png" alt="HTML" class="icono-swiper" style="vertical-align: middle;">
+                </p>
+            </div>
+        </div>
+                 <!-- Proyecto 5 -->
+                 <div class="swiper-slide proyecto5">
+                    <span>Escuela de Fútbol Rosales</span>
+                    <div>
+                        <h2>Escuela de Formación de Fútbol</h2>
+                        <p>
+                            <img src="assets/img/skills/html.png" alt="HTML" class="icono-swiper" style="vertical-align: middle;">
+                            <img src="assets/img/skills/css.png" alt="CSS" class="icono-swiper" style="vertical-align: middle;">
+                            <img src="assets/img/skills/js.png" alt="JS" class="icono-swiper" style="vertical-align: middle;">
+                        </p>
+                    </div>
+                </div>
+                    <!-- Proyecto 6 -->
+                    <div class="swiper-slide proyecto6">
+                        <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="assets/img/portfolio/ecommerce-vtex.mp4" type="video/mp4">
+                        </video>
+                        <span>Ecommerce - VTEX</span>
+                        <div>
+                            <h2></h2>
+                            <p>
+                                <img src="assets/img/skills/vtex.png" alt="VTEX" class="icono-swiper" style="vertical-align: middle;">
+                            </p>
+                        </div>
+                    </div>
+                    
 
+        <!-- Fin proyectos -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>  </section>
+    <!-- End Portfolio Section -->
+
+    
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
@@ -1084,6 +960,11 @@ Diseño y Gestión de Procedimientos Administrativos.
     </div>
   </section><!-- End Contact Section -->
 
+  <button id="back-to-top-btn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
+
+
+
+  
 <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1093,8 +974,11 @@ Diseño y Gestión de Procedimientos Administrativos.
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
 
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 <!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="main.js"></script>
 
 
 </body>
