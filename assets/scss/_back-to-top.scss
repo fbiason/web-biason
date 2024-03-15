@@ -1,0 +1,26 @@
+/* Estilos para el botón "Volver arriba" */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #D5D80E;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%; /* Hacer que el botón sea un círculo */
+  transition: background-color 0.5s ease; 
+}
+
+#back-to-top-btn:hover {
+  background-color: #441662;
+  color: white;
+}
+
+#back-to-top-btn i {
+  font-size: 1.5rem; 
+  font-weight: 800; 
+}

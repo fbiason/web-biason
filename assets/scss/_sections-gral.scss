@@ -1,12 +1,12 @@
   section {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    top: 140px;
-    bottom: 100%;
-    opacity: 0;
-    transition: ease-in-out 0.4s;
+  overflow: hidden;
+  width: 100%;
+  transition: ease-in-out 0.4s;
     z-index: 2;
+   // position: absolute;
+   //  top: 140px;
+  //  bottom: 100%;
+   // opacity: 0;
   }
   
   section.section-show {
@@ -19,6 +19,8 @@
   section .container {
     background: rgba(0, 0, 0, 0.9);
     padding: 30px;
+    margin-top: 2rem;
+    border-radius: 2rem;
   }
   
   @media (max-width: 768px) {
