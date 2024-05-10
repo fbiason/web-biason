@@ -7,7 +7,7 @@ Paleta de Colores:
 
 GA4: 28-7-236
 
-Actualización: 15-03-24
+Actualización: 10-05-24
 
 cd assets/scss
 sass --watch style.scss:../css/style.css
